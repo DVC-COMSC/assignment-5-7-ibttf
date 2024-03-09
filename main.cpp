@@ -10,8 +10,9 @@ int main()
 	cin >> N;
 	cout << n1 << " " << n2<< " ";
 	for (int i = 3; i<=N; i++){
-		n1 = n2;
+		int temp=n2;
 		n2 = n1 + n2;	
+		n1=temp;
 		cout << n2 << " ";
 	}
 
